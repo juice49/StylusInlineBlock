@@ -1,0 +1,14 @@
+/* ==========================================================================
+   Inline-block
+   ========================================================================== */
+
+/*
+ * This is a transparent mixin that automatically patches the use of
+ * display: inline-block for IE7.
+ */
+
+display(value)
+	display value
+	if value == 'inline-block'
+		*display inline
+		*zoom 1
